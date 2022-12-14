@@ -26,7 +26,8 @@ body {
   display: flex;
   justify-content: center;
   min-width: 320px;
-  min-height: 100dvh;
+  height: 100dvh; /* Dynamic Viewport */
+  margin: 0 auto;
 }
 
 header {
@@ -135,7 +136,11 @@ input:focus {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: auto;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
   }
 
   .header--logo {
@@ -151,10 +156,11 @@ input:focus {
   
   #root {
     width: 100%;
+    padding: 0 .2em;
   }
 
   main {
-    padding: 1.5em;
+    padding: .5em;
   }
 
   .form {
@@ -166,5 +172,4 @@ input:focus {
     padding: 1em;
   }
 
- 
 }

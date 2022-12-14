@@ -73,14 +73,11 @@ export default function Meme() {
                 />
                 <button onClick={getMemeImage} className="form-button">Get a new meme image  🖼</button>
             </div>
-            <a href={meme.randomImage} target="_blank">
                 <div className="meme">
                     <img className="meme--image" src={meme.randomImage} download />
                     <h2 className="meme--text top">{meme.topText}</h2>
                     <h2 className="meme--text bottom">{meme.bottomText}</h2>
                 </div>
-            download
-            </a>
         </main>
     )
 }
